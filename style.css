@@ -14,14 +14,20 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  padding: 20px 0;
+  padding: 20px 100px;
   -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
           box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  width: 100%;
+  background: white;
 }
 
 #navigation .logo {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 32px;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 42px;
   text-decoration: none;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -31,13 +37,73 @@
   color: #16F2E4;
 }
 
+#navigation .link a {
+  text-decoration: none;
+  padding: 30px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#navigation .link a:hover {
+  color: #16F2E4;
+}
+
+#navigation .social {
+  text-align: right;
+}
+
 #navigation .social img {
   -webkit-filter: invert(6%) sepia(36%) saturate(659%) hue-rotate(50deg) brightness(96%) contrast(103%);
           filter: invert(6%) sepia(36%) saturate(659%) hue-rotate(50deg) brightness(96%) contrast(103%);
+  width: 32px;
+  margin-left: 30px;
 }
 
 #navigation .social img:hover {
   -webkit-filter: invert(72%) sepia(100%) saturate(409%) hue-rotate(105deg) brightness(112%) contrast(90%);
           filter: invert(72%) sepia(100%) saturate(409%) hue-rotate(105deg) brightness(112%) contrast(90%);
+}
+
+#banner {
+  width: 100%;
+  height: 100vh;
+  background: #eee;
+}
+
+#about {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 300px;
+  font-family: "Open Sans Condensed", sans-serif;
+  letter-spacing: 20px;
+  padding-left: 20px;
+  margin-top: 100px;
+}
+
+#about p {
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 36px;
+  padding: 20px;
+}
+
+.button-box {
+  padding: 10px 60px;
+  border: 2px solid #070D02;
+  text-decoration: none;
+  -webkit-transition: 0.04s;
+  transition: 0.04s;
+}
+
+.button-box:hover {
+  background: #070D02;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
