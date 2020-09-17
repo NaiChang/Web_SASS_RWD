@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
+
+// 主要與次要色
+$color-main:#070D02;
+$color-sub:#16F2E4;
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 微軟正黑體;
+    color: $color-main
 }
 
 //導覽列
@@ -12,13 +19,26 @@
     padding: 20px 0;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 
+    .logo {
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 32px;
+        text-decoration: none;
+        transition: 0.4s;
+
+        &:hover {
+            color: $color-sub;
+        }
+    }
+
     .social {
 
         img {
-            filter: invert(4%) sepia(7%) saturate(659%) hue-rotate(24deg) brightness(96%) contrast(105%);
+            filter: invert(6%) sepia(36%) saturate(659%) hue-rotate(50deg) brightness(96%) contrast(103%);
 
             &:hover {
                 filter: invert(72%) sepia(100%) saturate(409%) hue-rotate(105deg) brightness(112%) contrast(90%);
+
+
             }
         }
     }

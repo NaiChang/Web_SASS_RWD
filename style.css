@@ -1,10 +1,12 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 微軟正黑體;
+  color: #070D02;
 }
 
 #navigation {
@@ -17,9 +19,21 @@
           box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
+#navigation .logo {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 32px;
+  text-decoration: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#navigation .logo:hover {
+  color: #16F2E4;
+}
+
 #navigation .social img {
-  -webkit-filter: invert(4%) sepia(7%) saturate(659%) hue-rotate(24deg) brightness(96%) contrast(105%);
-          filter: invert(4%) sepia(7%) saturate(659%) hue-rotate(24deg) brightness(96%) contrast(105%);
+  -webkit-filter: invert(6%) sepia(36%) saturate(659%) hue-rotate(50deg) brightness(96%) contrast(103%);
+          filter: invert(6%) sepia(36%) saturate(659%) hue-rotate(50deg) brightness(96%) contrast(103%);
 }
 
 #navigation .social img:hover {
