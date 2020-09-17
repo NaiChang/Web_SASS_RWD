@@ -1,5 +1,25 @@
-h1{
-    color :gray;
-    font-family: 'Baloo Tammudu 2'
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 微軟正黑體;
+}
 
+//導覽列
+#navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 0;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+
+    .social {
+
+        img {
+            filter: invert(4%) sepia(7%) saturate(659%) hue-rotate(24deg) brightness(96%) contrast(105%);
+
+            &:hover {
+                filter: invert(72%) sepia(100%) saturate(409%) hue-rotate(105deg) brightness(112%) contrast(90%);
+            }
+        }
+    }
 }
