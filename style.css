@@ -25,7 +25,7 @@
   background: white;
 }
 
-#navigation .logo {
+.logo {
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 42px;
   text-decoration: none;
@@ -33,33 +33,33 @@
   transition: 0.4s;
 }
 
-#navigation .logo:hover {
+.logo:hover {
   color: #16f2e4;
 }
 
-#navigation .link a {
+.link a {
   text-decoration: none;
   padding: 30px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
-#navigation .link a:hover {
+.link a:hover {
   color: #16f2e4;
 }
 
-#navigation .social {
+.social {
   text-align: right;
 }
 
-#navigation .social img {
+.social img {
   -webkit-filter: invert(6%) sepia(36%) saturate(659%) hue-rotate(50deg) brightness(96%) contrast(103%);
           filter: invert(6%) sepia(36%) saturate(659%) hue-rotate(50deg) brightness(96%) contrast(103%);
   width: 32px;
   margin-left: 30px;
 }
 
-#navigation .social img:hover {
+.social img:hover {
   -webkit-filter: invert(72%) sepia(100%) saturate(409%) hue-rotate(105deg) brightness(112%) contrast(90%);
           filter: invert(72%) sepia(100%) saturate(409%) hue-rotate(105deg) brightness(112%) contrast(90%);
 }
@@ -108,6 +108,11 @@
   color: white;
 }
 
+.button-div {
+  text-align: center;
+  margin-top: 50px;
+}
+
 #works {
   height: 100vh;
   background: #f9f9f9;
@@ -120,13 +125,60 @@
   margin: 0 auto;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (330px)[2];
+      grid-template-rows: repeat(2, 330px);
   grid-gap: 15px 25px;
 }
 
-#works #work-box .work-box-small {
+#works #work-box .work-box-small img {
   display: block;
   width: 100%;
   height: 300px;
   background: #000;
+}
+
+#works #work-box .work-box-small h2 {
+  text-align: center;
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+}
+
+#works #work-box .work-box-small span {
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 35px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+footer {
+  background: #070d02;
+  padding: 50px;
+  text-align: center;
+}
+
+footer .logo {
+  color: #cdcdcd;
+}
+
+footer .link a {
+  color: #cdcdcd;
+}
+
+footer .social {
+  text-align: center;
+}
+
+footer .social img {
+  -webkit-filter: invert(78%) sepia(11%) saturate(3%) hue-rotate(3deg) brightness(102%) contrast(96%);
+          filter: invert(78%) sepia(11%) saturate(3%) hue-rotate(3deg) brightness(102%) contrast(96%);
+  margin: 30px 20px;
+}
+
+footer #copyright {
+  color: #cdcdcd;
+  font-size: 8px;
+  margin-top: 45px;
 }
 /*# sourceMappingURL=style.css.map */
