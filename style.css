@@ -25,7 +25,24 @@
   background: white;
 }
 
+#navigation #menu {
+  grid-area: menu;
+}
+
+@media screen and (min-width: 1025px) {
+  #navigation #menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #navigation #menu {
+    display: block;
+  }
+}
+
 .logo {
+  grid-area: logo;
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 42px;
   text-decoration: none;
@@ -48,7 +65,14 @@
   color: #16f2e4;
 }
 
+@media screen and (max-width: 1024px) {
+  .link {
+    display: none;
+  }
+}
+
 .social {
+  grid-area: social;
   text-align: right;
 }
 

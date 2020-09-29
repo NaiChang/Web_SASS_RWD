@@ -11,6 +11,11 @@ $font-size-big: 36px;
 // 字體
 $font-family-main: "Open Sans Condensed", sans-serif;
 
+// RWD:桌上/平板/手機
+$desktop: 1025px;
+$table: 1024px;
+$mobile: 767px;
+
 * {
     margin: 0;
     padding: 0;
@@ -30,9 +35,25 @@ $font-family-main: "Open Sans Condensed", sans-serif;
     position: fixed;
     width: 100%;
     background: white;
+
+    // 選單
+    #menu {
+        grid-area: menu;
+
+        // 桌電: 隱藏
+        @media screen and (min-width: $desktop) {
+            display: none;
+        }
+        // 平板: 顯示
+        @media screen and (max-width: $table) {
+            display: block;
+        }
+    }
 }
 
 .logo {
+    grid-area: logo;
+
     font-family: $font-family-main;
     font-size: 42px;
     text-decoration: none;
@@ -53,9 +74,16 @@ $font-family-main: "Open Sans Condensed", sans-serif;
             color: $color-sub;
         }
     }
+
+    // 平板:隱藏
+    @media screen and (max-width: $table) {
+        display: none;
+    }
 }
 
 .social {
+    grid-area: social;
+    
     text-align: right;
     img {
         filter: invert(6%) sepia(36%) saturate(659%) hue-rotate(50deg) brightness(96%) contrast(103%);
