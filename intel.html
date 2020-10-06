@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Document</title>
+
+    <!-- AOS CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -35,7 +38,13 @@
     <!--關於我-->
     <section id="about">
         <h1 class="title">關於我</h1>
-        <h2>Nai</h2>
+        <!-- data-aos 動畫 -->
+        <!-- data-aos-offset 位移:往上為正 -->
+        <!-- data-aos-duration 持續時間:毫秒 0-3000 -->
+        <!-- data-aos-easing 緩動 -->
+        <!-- data-aos-mirror 雙向 true 允許雙向 false 不允許雙向 -->
+        <!-- data-aos-once 播放一次 true 一次 false 不限次數 -->
+        <h2 data-aos="zoom-in" data-aos-offset="500" data-aos-duration="2500" data-aos-easing="ease-out-cubic" data-aos-mirror="false" data-aos-once="right">Nai</h2>
         <p>Bonjour. I am NAI.</p>
         <a href="" class="button-box">ABOUT</a>
     </section>
@@ -44,32 +53,33 @@
     <section id="works">
         <h1 class="title">作品集</h1>
         <div id="work-box">
-            <div class="work-box-small">
+            <div class="work-box-small" data-aos="fade-in" data-aos-offset="500" data-aos-duration="2500">
                 <img src="" alt="">
                 <span>類別</span>
                 <h2>作品名稱</h2>
             </div>
-            <div class="work-box-small">
+            <!-- data-aos-delay 延遲 -->
+            <div class="work-box-small" data-aos="fade-in" data-aos-offset="500" data-aos-duration="2500" data-aos-delay="500">
                 <img src="" alt="">
                 <span>類別</span>
                 <h2>作品名稱</h2>
             </div>
-            <div class="work-box-small">
+            <div class="work-box-small" data-aos="fade-in" data-aos-offset="500" data-aos-duration="2500" data-aos-delay="1000">
                 <img src="" alt="">
                 <span>類別</span>
                 <h2>作品名稱</h2>
             </div>
-            <div class="work-box-small">
+            <div class="work-box-small" data-aos="fade-in" data-aos-offset="500" data-aos-duration="2500">
                 <img src="" alt="">
                 <span>類別</span>
                 <h2>作品名稱</h2>
             </div>
-            <div class="work-box-small">
+            <div class="work-box-small" data-aos="fade-in" data-aos-offset="500" data-aos-duration="2500" data-aos-delay="500">
                 <img src="" alt="">
                 <span>類別</span>
                 <h2>作品名稱</h2>
             </div>
-            <div class="work-box-small">
+            <div class="work-box-small" data-aos="fade-in" data-aos-offset="500" data-aos-duration="2500" data-aos-delay="1000">
                 <img src="" alt="">
                 <span>類別</span>
                 <h2>作品名稱</h2>
@@ -98,6 +108,12 @@
             Copyright &copy; 2020 NAI All rights reserved
         </div>
     </footer>
+
+    <!-- AOS CDN -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

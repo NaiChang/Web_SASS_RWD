@@ -193,6 +193,13 @@ $mobile: 767px;
 #works {
     height: 100vh;
     background: $color-bg-gray;
+    
+    //  平板
+    @media screen and (max-width: $table) {
+        height: auto;
+        padding-bottom: 100px;
+    }
+    
     // 手機
     @media screen and (max-width: $mobile) {
         height: auto;
@@ -214,6 +221,7 @@ $mobile: 767px;
             width: 100%;
             grid-template-columns: repeat(2, 1fr);
             padding: 0 35px;
+            
         }
         // 手機
         @media screen and (max-width: $mobile) {
