@@ -5,7 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Nai | 作品集</title>
 </head>
-<body>
+<body id="top">
+    <!--導覽列-->
+    <nav id="navigation">
+        <a href="../intel.html" class="logo">Nai</a>
+        <img src="../img/icon-menu.png" alt="選單" id="menu">
+        <div class="link">
+            <a href="./about/">關於我</a>
+            <a href="./works/">作品集</a>
+            <a href="./contact/">聯絡我</a>
+        </div>
+        <div class="social">
+            <a href=""><img src="../img/icon-fb2.png" alt="facebook"></a>
+            <a href=""><img src="../img/icon-ig2.png" alt="instagram"></a>
+            <a href=""><img src="../img/icon-twitter.png" alt="twitter"></a>
+            <a href=""><img src="../img/icon-youtube (2).png" alt="youtube"></a>
+        </div>
+    </nav>
+
+    <h1>作品集</h1>
+    <h1>作品集</h1>
+    <h1>作品集</h1>
     
+    <!-- 頁尾 -->
+    <footer>
+        <a href="./intel.html" class="logo">Nai</a>
+        <div class="social">
+            <a href=""><img src="../img/icon-fb2.png" alt="facebook"></a>
+            <a href=""><img src="../img/icon-ig2.png" alt="instagram"></a>
+            <a href=""><img src="../img/icon-twitter.png" alt="twitter"></a>
+            <a href=""><img src="../img/icon-youtube (2).png" alt="youtube"></a>
+        </div>
+        <div class="link">
+            <a href="">關於我</a>
+            <a href="">作品集</a>
+            <a href="">聯絡我</a>
+        </div>
+        <div id="copyright">
+            Copyright &copy; 2020 NAI All rights reserved
+        </div>
+    </footer>
+
+    <!-- 返回頂端按鈕 -->
+    <img src="../img/icon-arrow.png" alt="返回頂端" id="arrow" data-gte-target="top" data-gte-offset="0">
+
+    <!-- 前往指定元素 CDN -->
+    <script src="https://kid421.github.io/Web_JavaScript_GoToElement/goToElement.js"></script>
+    <!--  jQuery CDN  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--  Slick CDN  -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $("#banner").slick({
+            arrows: false,
+            dots: true,
+            dotsClass: "slick-dots dots"
+        });
+    </script>
+
+    <!-- AOS CDN -->
+    <script src=".https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
